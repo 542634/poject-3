@@ -1,0 +1,277 @@
+$color:#D2D2D2;
+$size:14px;
+$hover:#c9192E;
+$font-weight:600;
+.header{
+    width:100%;
+    height: 164px;
+    font-weight: $font-weight;
+    background-color:#FFFFFF ;
+}
+.header .head{
+    margin: 0 auto;
+    width: 1040px;
+    height: 150px;
+}
+.header .head .top{
+    margin-top: 10px;
+    float: right;
+}
+.header .head .top ul{
+    margin-top:5px;
+    float: left;
+}
+.header .head .top ul li{
+    text-align: center;
+    float: left;
+    height: 48px;
+    #outlogin{
+        color: $color;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 12px;
+        line-height:20px;
+        &:hover{
+            color:$hover;
+        }
+    }
+    #showuser{
+        color: $color;
+        
+        
+        
+    }
+}
+.header .head .top ul li:nth-child(1) a{
+    width: 52px;
+    padding-left: 20px;
+    background: url("/images/header/user.png") no-repeat left 3px ;
+    background-size: 15px auto;
+}
+.header .head .top ul li:nth-child(1) a:hover{
+    color: $hover;
+    background: url("/images/header/user-red.png") no-repeat left 3px ;
+    background-size: 15px auto;
+}
+.header .head .top ul li:nth-child(2) a{
+    width: 52px;
+    padding-left:10px;
+    padding-right: 10px;
+    background: url(/images/header/xie.png)no-repeat left 5px;
+    background-size: 7px auto;
+}
+.header .head .top ul li:nth-child(2) a:hover{
+    color: $hover;
+}
+.header .head .top ul li:nth-child(3) a{
+    width: 52px;
+    padding-left:22px;
+    background: url("/images/header/cart.png") no-repeat left 2px;
+    background-size: 18px auto; 
+}
+.header .head .top ul li:nth-child(3) a:hover{
+    color: $hover;
+    background: url("/images/header/cart-red.png") no-repeat left 2px;
+    background-size: 18px auto; 
+}
+#more{
+    float: right;
+    width: 18px;
+    height: 20px;
+    padding-right: 10px;
+    background: url("/images/header/more.png") no-repeat left 8px ;
+    background-size:10px auto;
+}
+#more:hover{
+    float: right;
+    width: 18px;
+    height: 20px;
+    background: url("/images/header/more-red.png") no-repeat left 8px ;
+    background-size:10px auto;
+}
+.header .head .top ul li:nth-child(4) a{
+    width: 52px;
+    padding:0 18px;
+    background: url("/images/header/love.png") no-repeat left 4px ;
+    background-size:14px auto;
+}
+.header .head .top ul li:nth-child(4) a:hover{
+    color: $hover;
+    background: url("/images/header/love-red.png") no-repeat left 4px ;
+    background-size:14px auto;
+}
+.header .head .top ul li:nth-child(5) a{
+    width: 52px;
+    height: 48px;
+    padding: 0 15px;
+    background: url("/images/header/local.png") no-repeat left 3px ;
+    background-size:10px auto;
+}
+.header .head .top ul li:nth-child(5) a:hover{
+    color: $hover;
+    background: url("/images/header/local-red.png") no-repeat left 3px ;
+    background-size:10px auto;
+}
+.header .head .top ul li:nth-child(6) a{
+    width: 52px;
+    padding:0 15px;
+    background: url("/images/header/more.png") no-repeat right 7px ;
+    background-size:10px auto;
+}
+
+.header .head .top ul li:nth-child(6) a:hover{
+   color: $hover;
+    background: url("/images/header/more-red.png") no-repeat right 7px ;
+    background-size:10px auto;
+}
+#hcountry{
+        font-size: $size;
+        background: #FFFFFF;
+        position: absolute;
+        height:350px;
+        width:173px;
+        z-index: 999;
+        overflow: auto;
+        color: #000000;
+        top:30px;
+        left: 765px;
+        
+        li{
+            text-align: right;
+            cursor: pointer;
+            width: 155px;
+            }
+    }
+.header .head .top ul li a{
+    color:$color;
+    font-size: $size;
+}
+#hdSearch{
+    padding-left: 20px;
+    float: right;
+    width: 220px;
+    height: 70px;
+}
+#hdSearch .search{
+    border: 1px solid $color;
+    float: right;
+    width: 218px;
+    height: 32px;
+}
+#hdSearch  .search .text-search{
+    border: none;
+    height:32px;
+    width: 176px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+}
+#hdSearch  .search .btn-search{
+    background: #FFFFFF;
+    background-image:url("/images/header/search.png") no-repeat center;
+    background-size:21px auto ;
+    border: none;
+    height:32px;
+    width:30px;
+    outline: none;
+    cursor: pointer;
+}
+#hdSearch ol{
+    margin-top: 40px;
+}
+#hdSearch ol li{
+    padding:0 5px;
+    float: left;
+}
+#hdSearch ol li a{
+    padding-right:10px ;
+    border-right: 1px solid $color;
+    color: $color;
+    font-size: $size;
+}
+#hdSearch ol li a:hover{
+    color: $hover;
+}
+#hdSearch ol li:nth-child(3) a{
+    border: none;
+}
+//logo和导航栏
+.header .head .nav{
+    height:75px;
+    position: absolute;
+    top: 67px;
+    float: left;
+    background-color:#FFFFFF ;
+    padding-bottom: 8px;
+}
+.header .head .nav .logo{
+    width: 157px;
+    height:78px;
+    float: left;
+    background:url("/images/header/vans-logo.svg") no-repeat center;
+    background-size: 156px auto;
+}
+.header .head .nav nav{
+    float: left;
+    height: 78px;
+}
+.header .head .nav nav ul{
+    text-align: center;
+    margin-top:52px;
+    width: 883px;
+    height: 42px;
+    background: url("/images/header/nav_bg.png") no-repeat -14px 27px;
+    background-size: 14px 7px;
+}
+.header .head .nav nav ul li{
+    background: url("/images/header/xie.png") no-repeat right 4px;
+    background-size: 10px auto;
+    height: 38px;
+    padding: 0 13px;
+    float: left;
+}
+.header .head .nav nav ul li a{
+    padding-right: 10px;
+    color:#000000;
+    font-size: 16px;
+    font-weight: bolder;
+    background: url("/images/header/arrow-down-black.svg") no-repeat right;
+    background-size: 10px auto;
+}
+.header .head .nav nav .wrap li a:hover{
+    color: $hover;
+    background: url("/images/header/arrow-down-red.png") no-repeat right;
+    background-size: 10px auto;
+}
+//黑线
+.header .clear{
+    background: #000000;
+    height: 16px;
+    width: 100%;
+}
+.header .head .nav nav .wrap li p{
+    position: absolute;
+    left: 0;
+    margin-top: 12px;
+    line-height: 58px;
+    width: 100%;
+    height: 58px;
+    background: #000000;
+    z-index: 2;
+}
+.header .head .nav nav .wrap li p span{
+    background: none;
+    margin-left: 100px;
+    float: left;
+}
+.header .head .nav nav .wrap li p span:first-child{
+    margin-left: 280px;
+}
+.header .head .nav nav .wrap li p span a{
+    background: none;
+    color: #ffffff;
+}
+.header .head .nav nav .wrap li p span a:hover{
+    background: none;
+    color: #ffffff;
+}

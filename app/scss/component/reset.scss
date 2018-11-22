@@ -1,0 +1,16 @@
+$font:"微软雅黑";
+$bodycolor:#F1F2ED;
+*{  padding: 0;
+    margin: 0;
+}
+body{
+    background: $bodycolor;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    font-family: $font;
+    text-decoration: none;
+}

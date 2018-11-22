@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vans(范斯)中国官方网站</title>
+		<meta name="keywords" content="Vans;范斯;Vans中国官方网站;Vans旗舰店;经典款;联名款;帆布鞋;滑板鞋;滑板;艺术;音乐;街头文化">
+		<link rel="stylesheet" type="text/css" href="/css/gallery.css"/>
+		<link rel="icon" type="text/css" href="https://img1.vans.com.cn/public/app/site/statics/favicon.ico"/>
+		
+	</head>
+	<body>
+		<header></header>
+		<div class="bigbox">
+			<div class="title">
+				<div class="flag">
+					<a href="/index.html">首页</a>
+					<span id="kind">
+						服饰
+					</span>
+				</div>
+				<div class="gallery-article">
+					<a href="javascript:;" class="red">产品</a>
+					<a href="javascript:;" id="news">新闻</a>
+				</div>
+			</div>
+			<div class="gallery-page">
+				<div class="gallery-page-title">
+					<div class="btn-page">
+						<a href="javascript:;"></a>
+						<span id="page-view">
+								1
+						</span>
+						<a href="javascript:;"></a>
+					</div>
+					<div class="gallery-select-sort">
+						<label for="">排序：</label>
+						<select name="orderBy" id="" class="action-orderby">
+                        <option value="" selected="">默认</option>
+                        <option value="price desc">按价格 从高到低</option>
+                        <option value="price asc">按价格 从低到高</option>
+                        <option value="buy_w_count desc">按销量</option>
+                     </select>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-filter-list">
+						<div class="gallery-filter-1">
+								<span class="listtitle bg">
+									颜色
+								</span>
+								<dd id="color">
+									<li><a href="javascript:;">黑色</a></li>
+									<li><a href="javascript:;">灰色</a></li>
+									<li><a href="javascript:;">白色</a></li>
+									<li><a href="javascript:;">米黄色</a></li>
+									<li><a href="javascript:;">卡其色</a></li>
+									<li><a href="javascript:;">金色</a></li>
+									<li><a href="javascript:;" id="morecolor">更多</a></li>
+									<li><a href="javascript:;">黑色</a></li>
+									<li><a href="javascript:;">黑色</a></li>	
+									<li><a href="javascript:;">黑色</a></li>	
+									<li><a href="javascript:;">黑色</a></li>	
+									
+								</dd>
+						</div>
+						<div class="gallery-filter-2" style="display: none;">
+								<span class="listtitle">
+									鞋码
+								</span>
+								<dd style="display: none; height: auto;" >
+									<li><a href="javascript:;">34.5</a></li>
+									<li><a href="javascript:;">35</a></li>
+									<li><a href="javascript:;">36</a></li>
+									<li><a href="javascript:;">36.5</a></li>
+									<li><a href="javascript:;">37</a></li>
+									<li><a href="javascript:;">38</a></li>
+									<li><a href="javascript:;">38.5</a></li>
+									<li><a href="javascript:;">39</a></li>
+									<li><a href="javascript:;">40</a></li>	
+									<li><a href="javascript:;">40.5</a></li>	
+									<li><a href="javascript:;">41</a></li>	
+									<li><a href="javascript:;">42</a></li>	
+									<li><a href="javascript:;">42.5</a></li>	
+									<li><a href="javascript:;">43</a></li>	
+									<li><a href="javascript:;">44</a></li>	
+									<li><a href="javascript:;">44.5</a></li>	
+									<li><a href="javascript:;">45</a></li>	
+									<li><a href="javascript:;">46</a></li>	
+									<li><a href="javascript:;">47</a></li>	
+								</dd>
+						</div>
+						<div class="gallery-filter-3" style="display: none;">
+								<span class="listtitle">
+									穿法
+								</span>
+								<dd style="display: none;">
+									<li><a href="javascript:;">系带</a></li>
+									<li><a href="javascript:;">一脚蹬</a></li>
+									<li><a href="javascript:;">魔术贴</a></li>
+									
+								</dd>
+						</div>
+						<div class="gallery-filter-4" style="display: none;">
+								<span class="listtitle">
+									鞋帮
+								</span>
+								<dd style="display: none;">
+									<li><a href="javascript:;">低帮</a></li>
+									<li><a href="javascript:;">中帮</a></li>
+									<li><a href="javascript:;">高帮</a></li>
+									
+								</dd>
+						</div>
+					</div>
+					<div class="gallery-item-list">
+						
+						<ul id="html-template">
+							
+						</ul>
+						<script type="text/html" id="html-script">
+							{{each products item i}}
+						
+									<li>
+									<a href="http://localhost:4444/html/product.html?id={{item.id}}">
+								<img src="{{item.img1}}" datasrc="{{item.img2}}" datasrcs=""/>
+								<a href="javascript:;">{{item.name}}</a><br/>
+								<span class="price">
+									￥{{item.price}}
+								</span>
+								<a href="javascript:;" class="fastbuy" style="display: none;">快速购买</a>
+									</a>
+									</li>
+						{{/each}}
+						</script>
+						
+						
+						<div class="page-footer">
+							<span class="pagenumber">
+								1 / 3
+							</span>
+							<input type="text" class="pager_input" name="" value="" style="width:58px;height:34px" total="3">
+							<input type="button" class="pager_button" value="" style="width:50px;height:38px;">
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="youlike">
+			<h3>猜你喜欢</h3>
+			<div class="youlikelist">
+			<ul>
+					<li>
+					<img src="/images/gallery/youlike1.jpg"/>
+					<a href="javascript:;">男款  袜子</a><br/>
+					<span class="price">
+						￥70.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/youlike2.jpg"/>
+					<a href="javascript:;">女款棉夹克</a><br/>
+					<span class="price">
+						￥1390.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/youlike3.jpg"/>
+					<a href="javascript:;">女款薄棉夹克</a><br/>
+					<span class="price">
+						￥890.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/products/1.jpg"/>
+					<a href="javascript:;" style="margin-bottom: 15px;">SK8-MID REISSUE GHILLIE MTE男款板鞋休闲鞋</a><br/>
+					<span class="price">
+						￥835.00
+					</span>
+				</li>
+				
+			</ul>
+				</div>	
+			<a href="javascript:;" class="a-next">换一批</a>
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/gallery-cloth.js"></script>
+	</body>
+</html>

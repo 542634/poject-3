@@ -1,0 +1,1 @@
+define(["jquery"],function(t){function n(){}return n.prototype.init=function(){t(".china").click(function(){t("#country").css({left:t(".china").offset().left,top:t(".china").offset().top-t("#country").height()}),t("#country").toggle()})},new n});

@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vans(范斯)中国官方网站</title>
+		<meta name="keywords" content="Vans;范斯;Vans中国官方网站;Vans旗舰店;经典款;联名款;帆布鞋;滑板鞋;滑板;艺术;音乐;街头文化">
+		<link rel="stylesheet" type="text/css" href="/css/shoppingcar.css"/>
+		<link rel="icon" type="text/css" href="https://img1.vans.com.cn/public/app/site/statics/favicon.ico"/>
+		
+	</head>
+	<body>
+	<header></header>
+	<div class="shoppingcar-box">
+		<div class="mian">
+			<div class="cart-title">
+				<h1>我的购物车</h1>
+			</div>
+			<div class="cart-empty" style="display: none;">
+				  <div class="empty-tip">
+				  	<b class="tit">抱歉！您的购物车内暂时没有任何商品</b><br>
+				  	<b>您可以继续购物，或者查看您的订单：</b><br>
+				  	<a href="/index.html" class="red"><span class="xuan">选购商品</span></a>
+				  	<a href="javascript:;" class="black"><span class="looklist">查看订单</span></a>
+				  </div>
+			</div>
+			
+			<div class="steps" style="display: block;">
+				<ul>
+		          <li class="step-1"><span><i>STEP1</i>添加购物车</span><s class="ac"></s></li>
+		          <li class="step-2"><span ><i>STEP2</i>填写和提交订单</span><s></s></li>
+		          <li class="step-3"><span><i>STEP3</i>成功提交订单</span><s></s></li>
+      			</ul>
+      			<div class="x">
+      				
+      			</div>
+			</div>
+			
+			<div class="cart-container" style="display: block;">
+				<dt>
+						<p style="width: 64px;">
+							<input type="checkbox" class="allchecked" checked="checked"  style="width: 15px;height: 15px;"/>
+							<span>全选</span>
+						</p>
+						<p style="width:417px;">
+							已选择的商品
+						</p>
+						<p style="width: 112px;">
+							数量
+						</p>
+						<p style="width: 112px;">
+							原价
+						</p>
+						
+						<p style="width: 72px;">
+							优惠
+						</p>
+						<p style="width: 112px;">
+							总计
+						</p>
+						<p style="width: 151px;">
+							操作
+						</p>
+					</dt>
+				<dl id="html-template">
+					
+					
+				</dl>
+				<script type="text/html" id="html-script">
+					{{each products item i}}
+					
+					<dd data-id="{{item.id}}">
+						<p style="width: 64px; margin-top: 43px;">
+							<input type="checkbox" class="checked" checked="checked" style="width: 15px;height: 15px;"/>
+							<span>选择</span>
+						</p>
+						<p style="width:417px;text-align: left;" class="xx">
+							<span style="float: left;">
+								<img src="{{item.img}}"/>
+							</span>
+							
+							<a href="javascript:;" style="color: #2b2b2b; letter-spacing: 2px;font-weight: bold;">
+								{{item.name}}
+							</a>
+							<br/>
+							<i style="font-style: normal; " class="color">{{item.color}}</i>
+							<input type="text" style="width: 50px;display: none;height:20px;" class="icolor" />
+							<i style="font-style: normal; " class="size">{{item.size}}</i>
+							<input type="text" style="width: 50px; display: none; height:20px;" class="isize" />
+							
+							<br/>
+							<a href="javascript:;" class="edit">编辑</a>
+							<a href="javascript:;" class="okBtn" style="display: none;">确定</a>
+							<a href="javascript:;" class="cancel" style="display: none;">取消</a>
+						</p>
+						<p style="width: 112px;margin-top:38px;" class="num">
+							<a href="javascript:;" class="down">-</a>
+							<input type="text" value="{{item.num}}" style=" text-align: center;"/>
+							<a href="javascript:;" class="up">+</a>
+						</p>
+						<p  id="onePrice" style="width: 112px;margin-top: 43px;" class="price">
+							￥<em style="font-style: normal;">{{item.price}}</em>.00
+						</p>
+						
+						<p style="width: 72px;margin-top: 43px;" class="price">
+							￥0.00
+						</p>
+						<p id="allprice" style="width: 112px;color: #c8192e;margin-top: 43px;" class="price">
+							￥<em style="font-style: normal;font-size: 14px; ">{{item.price*item.num}}.00</em>
+						</p>
+						<p style="width: 151px;float: right;margin-top: 43px;" class="editBtn">
+							<a href="javascript:;" >移入收藏夹/</a>
+							<a href="javascript:;" class="remove">移除</a>
+							
+						</p>
+					</dd>
+					
+					
+					
+					{{/each}}
+				</script>
+				<div class="all">
+						<li>
+							<span id="products-price">￥</span>
+							<h4>商品金额:</h4>
+							
+							
+						</li>
+						<br/>
+						<li>
+							<span id="allProduct-price">
+								￥
+							</span>
+							<h3>总金额:</h3>
+							
+							
+						</li>
+						<div id="allpricebtn">
+							<a href="gallery.html">继续购物</a>
+							<span id="pay">
+								下单结算
+							</span>
+						</div>
+					</div>
+							<!--<table border="" cellspacing="" cellpadding="">
+						<tr class="ttitle">
+							<th style="width: 141px;"><input type="checkbox" class="allchecked"checked="checked"/>
+							<span id="all" style="margin-left: 20px;">
+								全选
+							</span></th>
+							<th style="width: 417px;">已选择商品</th>
+							<th style="width: 112px;">数量</th>
+							<th style="width: 112px;">原价</th>
+							<th style="width: 72px">优惠</th>
+							<th style="width: 112px">总计</th>
+							<th style="width: 151px;">操作</th>
+						<tr id="html-template">
+							
+						</tr>
+						<script type="text/html" id="html-script">
+							<td><input type="checkbox" name="" id="" checked="checked" style="width:15px;"/>选择</td>
+							<td style="line-height: 15px;"><img src="{{products.img}}"/>
+							
+							<b style="font-weight: bold;">{{products.name}}</b><br>
+							
+								<span style=" display:inline-block;margin-top:10px;">
+									{{products.color}}
+								</span><br>
+							
+							{{products.size}}<br>
+								  
+								<a href="javascript:;">编辑</a></td>
+							<td><a href="">-</a><input type="text" value="{{products.num}}"/><a href="">+</a></td>
+							<td>￥{{products.price}}.00</td>
+							<td>￥0.00</td>
+							<td>￥总价</td>
+							<td><a href="">移入收藏夹/</a><a href="">移出</a></td>
+						</script>
+						
+					</table>-->
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="youlike">
+			<h3>猜你喜欢</h3>
+			<div class="youlikelist">
+			<ul>
+					<li>
+					<img src="/images/gallery/youlike1.jpg"/>
+					<a href="javascript:;">男款  袜子</a><br/>
+					<span class="price">
+						￥70.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/youlike2.jpg"/>
+					<a href="javascript:;">女款棉夹克</a><br/>
+					<span class="price">
+						￥1390.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/youlike3.jpg"/>
+					<a href="javascript:;">女款薄棉夹克</a><br/>
+					<span class="price">
+						￥890.00
+					</span>
+				</li>
+				<li>
+					<img src="/images/gallery/products/1.jpg"/>
+					<a href="javascript:;" style="margin-bottom: 15px;">SK8-MID REISSUE GHILLIE MTE男款板鞋休闲鞋</a><br/>
+					<span class="price">
+						￥835.00
+					</span>
+				</li>
+				
+			</ul>
+				</div>	
+			<a href="javascript:;" class="a-next">换一批</a>
+		</div>
+	<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/shoppingcar.js"></script>
+	</body>
+</html>

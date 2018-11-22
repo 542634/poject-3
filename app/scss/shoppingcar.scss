@@ -1,0 +1,398 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+.shoppingcar-box{
+    height:auto;
+    margin-top: 40px;
+    .mian{
+        text-align: center;
+        width: 1040px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .cart-title{
+            height: auto;
+            overflow: hidden;
+            color: #666666;
+            background: url("/images/shoppingcar/bw.png") no-repeat left bottom;
+            h2{
+                font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+                color: #2b2b2b;
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+        .cart-empty{
+                
+                padding: 80px 0 10px;
+                font-size: 14px;
+                line-height: 2;
+                color: #666;
+            text-align: center;
+                margin-bottom: 80px;
+            .empty-tip{
+                  .tit{
+                      font-size: 30px;
+                      color: #000;
+                      
+                  }
+                  a{
+                    padding: 0 3px;
+                    text-decoration: none;
+                    }
+                    
+                    span{
+                        width: 126px;
+                        height: 40px;
+                        line-height: 40px;
+                        display: inline-block;
+                        color: #fff;
+                        font-size: 16px;
+                        background-color: #C9192E;
+                    }
+                    .looklist{
+                        background: #000000;
+                    }
+                    .xuan:hover{
+                        background: #000000;
+                        transition: background-color 0.3s linear; 
+                    }
+              }  
+        }
+        .steps{
+           margin-bottom: 40px;
+            position: relative;
+            font-family: "微软雅黑";
+            height: auto;
+            overflow: hidden;
+            ul{
+                height: auto;
+                overflow: hidden;
+                display: block;
+                width: 975px;
+                margin: 0 auto;
+                clear: both;
+                z-index: 2;
+                position: relative;
+                color: #8c8c8c;
+                li{
+                    height: 30px;
+                    float: left;
+                    width: 325px;
+                    padding: 18px 0 26px;
+                    position: relative;
+                    font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+                    font-weight: bold;
+                    span.ac{
+                        color: #c8192e;
+                    }
+                    span{
+                        font-size:18px;
+                        display: block;
+                        padding: 0 10px;
+                    
+                        i{
+                            font-style: normal;
+                            width: auto;
+                            margin: 0;
+                            padding-right: 12px
+                        }   
+                    }
+                    s.ac{
+                        width: 25px;
+                        height: 26px;
+                        background: #f1f2ed url("/images/shoppingcar/step-active.svg") no-repeat center center;
+                        background-size: 25px auto;
+                        bottom:0px;
+                    }
+                    s{
+                        width:16px;
+                        height: 16px;
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        bottom:6px;
+                        margin-left: -8px;
+                        background: #d7d8d4;
+                        border-radius: 16px;
+                        z-index:4;
+                        
+                    }
+                }
+            }
+            .x{
+                position: absolute;
+                top: 60px;
+                width: 100%;
+                height: 2px;
+                background: #d7d8d4;
+            }
+        }
+    }
+}
+//table{
+//  border: 0;
+//  tr{
+//      width: 1040px;
+//      height:44px;
+//      border-bottom: 1px solid #d7d8d4;
+//      th{
+//          position: relative;
+//          text-align: left;
+//          border: 0;
+//          font-size: 18px;
+//          font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+//          font-weight: bold;
+//          color: #666666;
+//          input{
+//              position: absolute;
+//              width:20px;
+//              height:20px;
+//              float: left;
+//              top: 12px;
+//              left: 1px;
+//          }
+//      }
+//      td{
+//          border: 0;
+//          text-align:left;
+//          input{
+//              width: 60px;
+//              text-align: center;
+//          }
+//        img{
+//            width: 100px;
+//            height: 100px;
+//            float: left;
+//        }
+//      }
+//  }
+//  
+//}
+        .cart-container{
+          
+            dt{
+                    height: 44px;
+                    border-bottom: 1px solid #d7d8d4;
+                    p{
+                        display: inline-block;
+                        float: left;
+                        font-size: 18px;
+                        font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+                        font-weight: bold;
+                        color: #666666;
+                    }
+                }
+            dl{
+                
+                
+                overflow: hidden;
+                dd{
+                    height: auto;
+                    overflow: hidden;
+                    vertical-align: middle;
+                     border-bottom: 1px solid #d7d8d4;
+                    p{
+                       font-weight:bold;
+                       color: #666666;
+                       display: inline-block;
+                       float:left;
+                       .colorandsize{
+                           
+                           font-weight: bold;
+                           font-family:"微软雅黑";
+                           color: #666666;
+                           line-height:30px;
+                           
+                       }
+                       .edit{
+                          color:#589BC6;
+                          letter-spacing:2px;
+                          font-weight: bold;
+                          font-family: "Franklin-Demi-bold","冬青黑体","microsoft yahei";
+                       }
+                       span{
+                           img{
+                               width: 100px;
+                               height: 100px;
+                           }
+                       }
+                    }
+                    .num{
+                        a{
+                            font-size: 20px;
+                            color: #a9a9a9;
+                            
+                        }
+                        input{
+                            width: 60px;
+                            height: 30px;
+                            font-size:14px ;
+                            font-weight: bold;
+                            color: #666666;
+                        }
+                    }
+                    .price{
+                        font-family: "微软雅黑";
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #666666;
+                    }
+                    .editBtn{
+                        a{
+                            font-size: 18px;
+                            color: #026eb7;
+                            font-weight: bold;
+                            &:hover{
+                                color: #C9192E;
+                            }
+                        }
+                    }
+                    .edit,.okBtn,.cancel,.editBtn{
+                         font-size:16px;
+                            color: #026eb7;
+                            font-weight: bold;
+                            &:hover{
+                                color: #C9192E;
+                            }
+                    }
+                }
+            }
+            .all{
+                
+                height:200px;
+                overflow: hidden;
+                li{
+                    margin:5px 0;
+                    height: auto;
+                    overflow: hidden;
+                    
+                    text-align: right;
+                    
+                    color: #666666;
+                    
+                    h4{
+                       float:right;
+                       font-size:20px;
+                    }
+                    h3{
+                        font-size:25px;
+                    }
+                    span{
+                        font-family: "微软雅黑";
+                        color: #C8192E;
+                        font-size:20px;
+                        text-align: left;
+                        float: right;
+                        display:block;
+                        width: 120px;
+                        font-weight:bolder;
+                    }
+                    
+                }
+                #allpricebtn{
+                    text-align: right;
+                    background: #000000;
+                    a{
+                        font-size:16px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        &:hover{
+                            color:#0563c3 ;
+                        }
+                    }
+                    span{
+                        cursor: pointer;
+                        background-color:#C8192E;
+                        text-align:center;
+                        line-height: 46px;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 25px;
+                        width: 210px;
+                        height: 46px;
+                        display:inline-block;
+                        background-image:url("/images/shoppingcar/arr-r-white.svg");
+                        background-repeat:no-repeat ;
+                        background-position:160px ;
+                        background-size:12px auto ;
+                    }
+                    #pay:hover{
+                        background-color: #000000;
+                        transition: background-color 0.2s linear;
+                    }
+                }
+            }
+        }
+    
+
+
+.youlike{
+    display: none;
+    height:520px;
+    background: #FFFFFF;
+    position: relative;
+    h3{
+    position: absolute; 
+    left: 550px;
+    top:-51px;
+    width: 151px;
+    height: 102px;
+    line-height: 102px;
+    margin: 0 auto;
+    background: url("/images/gallery/rhombus.svg") no-repeat center center;
+    background-size: 151px auto;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    }
+    .youlikelist{
+        width:100%;
+        height:440px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        ul{
+            padding-top: 50px;
+            width: 1040px;
+            height:340;
+            margin: 0 auto;
+            li{
+                width: 245px;
+                height: 325px;
+                float: left;
+                text-align: center;
+                img{
+                    width: 245px;
+                    height: 245px;
+                    margin-bottom: 15px;
+                }
+                a{  
+                    display: inline-block;
+                    font-size:16px;
+                    color: #64686b;
+                    font-weight: bold;
+                    font-style: normal;
+                    margin-bottom:35px;
+                }
+                span{
+                        color: #c8192e;
+                        font-size:14px;
+                        font-weight: bold;
+                        font-family: FRADMCN,"冬青黑体","microsoft yahei";
+                }
+            }
+        }
+    }
+    .a-next{
+        text-align: center;
+        line-height: 40px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        width: 165px;
+        height: 40px;
+        background: #000000;
+        margin: 0 auto;
+    }
+}

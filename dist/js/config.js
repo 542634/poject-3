@@ -1,0 +1,1 @@
+require.config({baseUrl:"/",paths:{header:"module/header",footer:"module/footer",jquery:"libs/jquery/jquery-1.11.3",bootstrap:"libs/bootstrap/js/bootstrap",tools:"libs/tools",indexImg:"module/indexImg",template:"libs/template-web",cookie:"libs/jquery.cookie"},shim:{bootstrap:{deps:["jquery"]}}});

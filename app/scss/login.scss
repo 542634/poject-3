@@ -1,0 +1,151 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+.login-box{
+    height: 413px;
+    width: 100%;
+    margin: 60px 0;
+    .login{
+        margin: 0 auto;
+        height:413px;
+        overflow: hidden;
+        width: 600px;
+        border: 1px solid #c9caca;
+        background-color: #fff;
+        .login-title{
+                margin-top: 35px;
+                border: 0;
+                margin-bottom: 10px;
+                padding-left: 59px;
+            h2{
+            font: 600 24px/44px "Franklin-Demi",'冬青黑体',"microsoft yahei";
+            color: #666666;
+            width: 160px;
+            text-align: center;
+            background: #fff;
+            float: left;
+            cursor: pointer;
+            padding-bottom: 2px;
+            margin-bottom:10px ;
+        }
+            h2.ac{
+            color:#C9192E ;
+            border-bottom:2px solid  #C9192E ;
+            }
+        }
+        form{
+           
+            ul{
+                li{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    height: auto;
+                    overflow: visible;
+                    input{
+                        border: 1px solid ;
+                        width: 458px;
+                        padding: 11px 0;
+                        padding-left: 22px;
+                        border-color: #d7d8d4;
+                        font-size: 16px;
+                        font-family: "Franklin","冬青黑体","microsoft yahei";
+                    }
+                    .yzm{
+                        width: 242px;
+                        margin-right: 8px;
+                        float: left;
+                        margin-left: 58px;
+                        margin-bottom: 19px;    
+                    }
+                    .mobile_yzm{
+                        width: 242px;
+                        margin-right: 8px;
+                        float: left;
+                        margin-left: 58px;
+                        margin-bottom: 19px;
+                    }
+                }
+                .forget{
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    a{
+                        float: right;
+                        margin-right: 59px;
+                        line-height: 32px;
+                        color: #d2d2d2;
+                        font-size: 16px;
+                        width: auto;
+                        font-weight: normal;
+                        font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+                    }
+                }
+                .loginNowandregister{
+                    overflow: hidden;
+                    .loginNow{
+                        float: left;
+                        width: 310px;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 0;
+                        font-size: 16px;
+                        border: 0;
+                        color: #FFFFFF;
+                        margin-left: 60px;
+                        background: #C9192E;
+                        &:hover{
+                            background: #000000;
+                            transition: background-color 0.3s linear
+                        }
+                    }
+                    .register{
+                        display: inline-block;
+                        width: 150px;
+                        height: 50px;
+                        line-height: 50px;
+                        background: #000;
+                        text-align: center;
+                        font-size: 16px;
+                        color: #fff;
+                        margin-right: 59px;
+                    }
+                }
+            }
+            #trust_signin{
+                
+                margin: 25px 59px 5px;
+                a{
+                    margin: 0!important;
+                    margin-right: 10px!important;
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                }
+                span{       color: #666666;
+                            font-size: 18px;
+                            font-weight: bold;
+                            font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+                            vertical-align: middle;
+                            float: left;
+                            line-height: 37px;
+                    }
+                   .bg-1{
+                       background: url("/images/login/weichat-round-inactive-36.svg") no-repeat center center;
+                        background-size: 40px 40px;
+                   }
+                   .bg-2{
+                           background: url("/images/login/weibo-square-inactive-36.svg") no-repeat center center;
+                           background-size: 40px 40px;
+                   }
+                   .bg-3{
+                       background: url("/images/login/qq-round-inactive-36.svg") no-repeat center center;
+                       background-size: 40px 40px;
+                   }
+                   .bg-4{
+                       background: url("/images/login/zhifubao.svg") no-repeat center center;
+                       background-size: 40px 40px;
+                   }
+            }
+        }
+        
+    }
+}
